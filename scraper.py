@@ -346,13 +346,16 @@ def build_rss(items: list[dict]) -> str:
     """Build RSS 2.0 XML string from a list of item dicts."""
     now_rfc2822 = format_datetime(datetime.now(timezone.utc))
 
-    # Register namespaces so they serialise cleanly
+    # Register namespaces so they serialise cleanly.
+    # Do NOT also set xmlns:* manually — register_namespace handles it
+    # and duplicates cause an expat parse error in minidom.
     ET.register_namespace("atom", ATOM_NS)
     ET.register_namespace("dc", DC_NS)
 
     rss = ET.Element("rss", version="2.0")
+    # dc namespace won't auto-emit (no dc: elements used), so set it manually.
+    # atom namespace is auto-emitted via the atom:link element below.
     rss.set("xmlns:dc", DC_NS)
-    rss.set("xmlns:atom", ATOM_NS)
 
     channel = ET.SubElement(rss, "channel")
     ET.SubElement(channel, "title").text = FEED_TITLE
@@ -513,7 +516,11 @@ def main() -> None:
         for it in new_items
     ]
 
-    # 6) Write RSS
+    # 6) Write RSS (even if empty — produces a valid scaffold)
+    if not new_items and not existing_items:
+        print("\n[+] No items to write; keeping existing feed unchanged")
+        return
+
     rss_xml = build_rss(all_items)
     FEED_FILE.write_text(rss_xml, encoding="utf-8")
     print(f"\n[+] Wrote {FEED_FILE} ({len(all_items)} total items)")
