@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>WFP Job Vacancies</title>
+    <link>https://wd3.myworkdaysite.com/en-GB/recruiting/wfp/job_openings</link>
+    <description>List of vacancies at WFP</description>
+    <language>en</language>
+    <atom:link href="https://cinfoposte.github.io/WFP-jobs/wfp_jobs.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 25 Feb 2026 14:52:08 +0000</pubDate>
+  </channel>
+</rss>
