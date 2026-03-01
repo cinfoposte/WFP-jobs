@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
   <channel>
     <title>WFP Job Vacancies</title>
     <link>https://wd3.myworkdaysite.com/en-GB/recruiting/wfp/job_openings</link>
     <description>List of vacancies at WFP</description>
     <language>en</language>
     <atom:link href="https://cinfoposte.github.io/WFP-jobs/wfp_jobs.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 25 Feb 2026 14:52:08 +0000</pubDate>
+    <pubDate>Sun, 01 Mar 2026 07:48:48 +0000</pubDate>
+    <item>
+      <title>Internal Auditor P4</title>
+      <link>https://wd3.myworkdaysite.com/en-GB/recruiting/wfp/job_openings/job/Rome-Italy/Internal-Auditor-P4_JR120800-2</link>
+      <description><![CDATA[WFP has a vacancy for the position of Internal Auditor P4. Location: Rome, Italy. Level: P-4.]]></description>
+      <guid isPermaLink="false">6208195488392663</guid>
+      <pubDate>Sun, 01 Mar 2026 07:48:19 +0000</pubDate>
+      <source url="https://wd3.myworkdaysite.com/en-GB/recruiting/wfp/job_openings">WFP Job Vacancies</source>
+    </item>
+    <item>
+      <title>Director, Internal Audit D1</title>
+      <link>https://wd3.myworkdaysite.com/en-GB/recruiting/wfp/job_openings/job/Rome-Italy/Director--Internal-Audit-D1_JR120144-2</link>
+      <description><![CDATA[WFP has a vacancy for the position of Director, Internal Audit D1. Location: Rome, Italy. Level: D-1.]]></description>
+      <guid isPermaLink="false">9846618381082152</guid>
+      <pubDate>Sun, 01 Mar 2026 07:48:19 +0000</pubDate>
+      <source url="https://wd3.myworkdaysite.com/en-GB/recruiting/wfp/job_openings">WFP Job Vacancies</source>
+    </item>
   </channel>
 </rss>
